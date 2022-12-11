@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputName"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Введите ваше имя (например: Oleg)"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Введите ПИН-КОД"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputName"
+        app:layout_constraintStart_toStartOf="@+id/inputName"
+        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/showSalary"
+        android:layout_width="314dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Сумма к выдачи"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputPass"
+        app:layout_constraintStart_toStartOf="@+id/inputPass"
+        app:layout_constraintTop_toBottomOf="@+id/inputPass" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCheck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ПРОВЕРИТЬ"
+        app:layout_constraintEnd_toEndOf="@+id/showSalary"
+        app:layout_constraintStart_toStartOf="@+id/showSalary"
+        app:layout_constraintTop_toBottomOf="@+id/showSalary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
