@@ -2,6 +2,7 @@ package com.example.checksalaryapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.transition.Visibility
 import com.example.checksalaryapp.constants.Staff
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 		bindingClass = ActivityMainBinding.inflate(layoutInflater)
 		setContentView(bindingClass.root)
 		bindingClass.btnCheck.setOnClickListener {
+			Log.d("MyMsg", "ID huy = ${R.drawable.huy}")
 			val checkName = bindingClass.inputName.text.toString()
 			val passField = bindingClass.inputPass.text.toString()
 			bindingClass.imgFoto.visibility = View.VISIBLE
