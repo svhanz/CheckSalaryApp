@@ -11,7 +11,7 @@
         android:layout_width="316dp"
         android:layout_height="58dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
         android:gravity="center"
@@ -28,7 +28,7 @@
         android:id="@+id/inputPass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Введите ПИН-КОД"
@@ -42,7 +42,7 @@
         android:id="@+id/showSalary"
         android:layout_width="314dp"
         android:layout_height="36dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Сумма к выдачи"
         android:textColor="@color/purple_200"
@@ -55,10 +55,21 @@
         android:id="@+id/btnCheck"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="ПРОВЕРИТЬ"
         app:layout_constraintEnd_toEndOf="@+id/showSalary"
         app:layout_constraintStart_toStartOf="@+id/showSalary"
         app:layout_constraintTop_toBottomOf="@+id/showSalary" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/inputName"
+        app:layout_constraintEnd_toEndOf="@+id/inputName"
+        app:layout_constraintStart_toStartOf="@+id/inputName"
+        app:srcCompat="@drawable/kukish" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
